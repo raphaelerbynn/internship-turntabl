@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      }
+      .formcontainer {
+      text-align: center;
+      margin: 24px 50px 12px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+  </style>
+</head>
+<body>
+  <form action="http://localhost:5000/login" method="post" class="formcontainer">
+    <div class="container">
+      <label><strong>Name</strong></label>
+        <input type="text" placeholder="Enter name" name="name" required>
+      <label><strong>Email</strong></label>
+        <input type="text" placeholder="Enter email" name="email" required>
+      <label><strong>ID</strong></label>
+        <input type="text" placeholder="Enter id" name="id" required>
+      <center><input type="submit" value="Submit"></center>
+    </div>
+  </form>
+</body>
+</html>
